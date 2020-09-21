@@ -15,14 +15,14 @@
 		<h1>Нүүр</h1>
 		<img src="img/asd.png" alt="">	
 	</div>
-	<div id="bidnii_tuhai">
+	<div id="bidnii_tuhai" style="display: none;">
 		<h1>Бидний тухай</h1>
 		<img src="img/fgh.png" alt="">
 	</div>
-	<div id="zurhai">
+	<div id="zurhai" style="display: none;">
 		<h1>Зурхай</h1>
 	</div>
-	<div id="medee">
+	<div id="medee" style="display: none;">
 		<h1>Мэдээ</h1>
 	</div>
 	<script>
@@ -30,9 +30,6 @@
 		const bidnii_tuhai = document.getElementById("bidnii_tuhai")
 		const zurhai = document.getElementById("zurhai")
 		const medee = document.getElementById("medee")
-		bidnii_tuhai.style.display = "none";
-		zurhai.style.display = "none";
-		medee.style.display = "none";
 		function changePage(pageName){
 			bidnii_tuhai.style.display = "none";
 			zurhai.style.display = "none";
