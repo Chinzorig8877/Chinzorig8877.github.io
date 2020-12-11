@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+   
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">Chinzo<span>.mn</span></a></div>
+                <ul class="menu">
+                <li><a href="index.html">Нүүр</a></li>
+                <li><a href="#about">Тухай</a></li>
+                <li><a href="#">Мэдээлэл</a></li>
+                <li><a href="#">Бусад</a></li>
+                <li><a href="#">Бүтээлүүд</a></li>
+                <li><a href="#">Холбоо барих</a></li>
+                </ul>
+                    <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <table id="myTable">
+        <tr>
+            <td colspan="4"><input id="myInput" disabled></td>
+        </tr>
+        <tr>
+            <td><button onclick="insert(7)">7</button></td>
+            <td><button onclick="insert(8)">8</button></td>
+            <td><button onclick="insert(9)">9</button></td>
+            <td><button onclick="insert('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="insert(4)">4</button></td>
+            <td><button onclick="insert(5)">5</button></td>
+            <td><button onclick="insert(6)">6</button></td>
+            <td><button onclick="insert('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="insert(1)">1</button></td>
+            <td><button onclick="insert(2)">2</button></td>
+            <td><button onclick="insert(3)">3</button></td>
+            <td><button onclick="insert('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="clean()">C</button></td>
+            <td><button onclick="insert(0)">0</button></td>
+            <td><button onclick="insert('/')">/</button></td>
+            <td><button onclick="equal()">=</button></td>
+        </tr>
+    </table>
+    <script src="../javascript/calculator.js">  </script>
+
+</body>
+</head> 
+</html>

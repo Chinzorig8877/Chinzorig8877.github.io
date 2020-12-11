@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Countdown</title>
+    </head>
+    <link rel="stylesheet" href="../css/countdown.css">
+    <body>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo">
+                    <a href="#">Chinzo<span>.mn</span></a></div>
+                    <ul class="menu">
+                    <li><a href="index.html">Нүүр</a></li>
+                    <li><a href="#about">Тухай</a></li>
+                    <li><a href="#">Мэдээлэл</a></li>
+                    <li><a href="#">Бусад</a></li>
+                    <li><a href="#">Бүтээлүүд</a></li>
+                    <li><a href="#">Холбоо барих</a></li>
+                    </ul>
+                        <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="counter"></div>
+            <input type="number" id="seconds" placeholder="Тоо бич !!">
+            <div class="buttons">
+                <button class="btn start" id="start" value="1" onclick="check(this)">Start</button>
+                <button class="btn start" id="continue" value="1" onclick="check(this)">Continue</button>
+                <button class="btn stop" id="stop" value="0" onclick="check(this)">Stop</button>
+                <button class="btn start" id="ok"  onclick="toSubmit()">Submit</button>
+            </div>
+        </div>
+        <script src="../javascript/countdown.js"></script>
+    </body>
+</html>
