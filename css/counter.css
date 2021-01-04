@@ -1,3 +1,10 @@
+*{
+   margin:0;
+   padding:0;
+   list-style:none;
+   text-decoration: none;
+}
+
 a{
    text-decoration:none;
 
@@ -22,11 +29,11 @@ a{
    font-size:24px;
 } #too{
    font-size:52px;
-   margin-left:48%;
+   margin-left:28%;
    margin-top:24px;
 }
 #hasah{
-   margin-left:750px;
+   margin-left:250px;
    font-size:24px;
    margin-top:350px;
 }
@@ -39,36 +46,126 @@ a{
 #reset{
    font-size:24px;
 }
-.max-width{
-   max-width:1300px;
-   padding:0 80px;
-   margin:auto;
-}
-.navbar{
+nav{
+   height:80px;
    background:crimson;
-   position:fixed;
-   padding:15px 0;
-   width:100%;
-   font-family: 'Ubuntu', sans-serif;
+   
 }
-.navbar .max-width{
-   display:flex;
-   align-items:center;
-   justify-content: space-between;
-}
-.navbar .logo a{ 
-   color:#fff;
+.logo{
+   width:150px;
+   position: absolute;
+   top:17px;
+   left:12%;
    font-size:35px;
    font-weight:600;
 }
-.navbar .menu li{
-   list-style:none;
-   display:inline-block;
+.logo a{
+   color:white;
 }
-.navbar .menu li a{
-   color:#fff;
-   font-size:18px;
-   font-weight:500;
-   margin-left:25px;
+.logo a span{
+   color:black;
+}
 
+nav ul{
+   float:right;
+   margin-right:25px;
+   margin:auto;
+   padding: 0 80px;
+}
+nav ul li{
+   display:inline-block;
+   line-height:80px;
+   margin:0 15px;   
+}
+nav ul li a{
+   position: relative;
+   color:white;
+   font-size:18px;
+   text-orientation: uppercase;
+}
+nav ul li a:before{
+   position: absolute;
+   content:'';
+   left:0;
+   bottom:0;
+   height:3px;
+   width:100%;
+   transition: color 0.3s ease;
+
+}
+nav ul li a:hover{
+  color:black;
+}
+label #btn,
+label #cancel{
+   color:white;
+   font-size:30px;
+   float:right;
+   line-height:80px;
+   margin-right:40px;
+   cursor:pointer;
+   display:none;
+}
+#check{
+   display:none;
+}
+@media (max-width:1118px){
+   .logo{
+       left:8%;
+   }
+   .logo a span{
+       left:8%;
+   }
+}
+@media (max-width:944px){
+   .logo{
+       left:6%;
+       top:20px;
+       width:130px;
+   }
+   nav ul li a{
+       font-size:17px;
+   }
+}
+@media (max-width:860px){
+   #myPicture{
+       width:400px;
+       height:300px;
+   }
+   label #btn{
+       display:block;
+   }
+   ul{
+       position:fixed;
+       width:100%;
+       height:100vh;
+       background:black;
+       top:80px;
+       left:-100%;
+       text-align:center;
+       transition: all .5s;
+   }
+   nav ul li{
+       display:block;
+       margin:50px 0;
+       line-height:30px;
+   }
+   nav ul li a{
+       font-size:20px;
+   }
+   #check:checked ~ ul{
+       left:0;
+   }
+   #check:checked ~ label #btn{
+       display:none;
+   }
+   #check:checked ~ label #cancel{
+       display:block;
+   }
+}
+@media (max-width:300px){
+   #myPicture{
+       width:20%;
+       height:15%;
+   }
 }

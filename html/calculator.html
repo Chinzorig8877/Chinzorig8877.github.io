@@ -4,57 +4,53 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="../css/calculator.css">
-   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 <body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo">
-                <a href="#">Chinzo<span>.mn</span></a></div>
-                <ul class="menu">
+    <nav>
+        <input type="checkbox" id="check" >
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+
+        </label>
+            <div class="logo"><a href="#">Chinzo<span>.mn</span></a></div>
+            <ul class="menu">
                 <li><a href="index.html">Нүүр</a></li>
-                <li><a href="#about">Тухай</a></li>
-                <li><a href="#">Мэдээлэл</a></li>
-                <li><a href="#">Бусад</a></li>
-                <li><a href="#">Бүтээлүүд</a></li>
+                <li><a href="index.html#about">Тухай</a></li>
+                <li><a href="index.html#services">Мэдээлэл</a></li>
+                <li><a href="index.html#skills">Бусад</a></li>
+                <li><a href="index.html#apps">Бүтээлүүд</a></li>
                 <li><a href="#">Холбоо барих</a></li>
-                </ul>
-                    <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-            </div>
+            </ul>
         </div>
     </nav>
-    
-    <table id="myTable">
-        <tr>
-            <td colspan="4"><input id="myInput" disabled></td>
-        </tr>
-        <tr>
-            <td><button onclick="insert(7)">7</button></td>
-            <td><button onclick="insert(8)">8</button></td>
-            <td><button onclick="insert(9)">9</button></td>
-            <td><button onclick="insert('*')">*</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="insert(4)">4</button></td>
-            <td><button onclick="insert(5)">5</button></td>
-            <td><button onclick="insert(6)">6</button></td>
-            <td><button onclick="insert('+')">+</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="insert(1)">1</button></td>
-            <td><button onclick="insert(2)">2</button></td>
-            <td><button onclick="insert(3)">3</button></td>
-            <td><button onclick="insert('-')">-</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="clean()">C</button></td>
-            <td><button onclick="insert(0)">0</button></td>
-            <td><button onclick="insert('/')">/</button></td>
-            <td><button onclick="equal()">=</button></td>
-        </tr>
-    </table>
-    <script src="../javascript/calculator.js">  </script>
-
+        <div class="center">
+            <form name="forms">
+                <input type="text" id="display" name="display" disabled>
+                <div class="buttons">
+                    <input type="button" id="seven" value="7">
+                    <input type="button" id="eight" value="8">
+                    <input type="button" id="nine" value="9">
+                    <input type="button" id="divide" value="/"><br>
+                    <input type="button" id="four" value="4">
+                    <input type="button" id="five" value="5">
+                    <input type="button" id="six" value="6">
+                    <input type="button" id="multi" value="*"><br>
+                    <input type="button" id="one" value="1">
+                    <input type="button" id="two" value="2">
+                    <input type="button" id="three" value="3">
+                    <input type="button" id="subs" value="-"><br>
+                    <input type="button" id="dot" value=".">
+                    <input type="button" id="zero" value="0">
+                    <input type="button" id="add" value="+">
+                    <input type="button" id="clear" value="C"><br>
+                    <input type="button" id="equal" value="=">
+                </div>
+            </form>
+        </div>
+        <script src="../javascript/calculator.js"></script>
 </body>
 </head> 
 </html>

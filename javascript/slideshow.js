@@ -8,13 +8,17 @@ function togglePause(){
     else{
         intervalId = setInterval(myIntervalFunction,1000)
     }
+    
     isPaused = !isPaused
+
 }
+
 function myIntervalFunction(){
   document.querySelector("img").src = myImagesArray[i]
   i++
   if(i == myImagesArray.length)
     i = 0
+    
 }
 
 var intervalId = setInterval(myIntervalFunction,1000)
