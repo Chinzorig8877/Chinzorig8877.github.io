@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/tictac.css">
+  <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" >
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+
+        </label>
+            <div class="logo"><a href="#">Chinzo<span>.mn</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html">Нүүр</a></li>
+                <li><a href="index.html#about">Тухай</a></li>
+                <li><a href="index.html#services">Мэдээлэл</a></li>
+                <li><a href="index.html#skills">Бусад</a></li>
+                <li><a href="index.html#apps">Бүтээлүүд</a></li>
+                <li><a href="#">Холбоо барих</a></li>
+            </ul>
+        </div>
+    </nav>
+  <div class="board" id="board">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+  <div class="winning-message" id="winningMessage">
+    <div data-winning-message-text></div>
+    <button id="restartButton">Restart</button>
+  </div>
+</body>
+<script src="../javascript/tictac.js" ></script>
+
+</html>
